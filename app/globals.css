@@ -2,21 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+} */
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
+.border-indigo-950 {
+  --tw-border-opacity: 1;
+  margin: 8px;
+  border-color: rgb(30 27 75 / var(--tw-border-opacity));
+}
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+
+
+/* Custom CSS for the splash animation */
+/* Custom CSS for the splash screen transition */
+.splash-container {
+  /* opacity: 0; */
+  transition: opacity 10s ease-in-out;
 }
 
-body {
+@keyframes reverseRotateAnimation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes splashAnimation {
+  0% {
+    transform: scale(1.02);
+  }
+  20% {
+    transform: scale(2);
+    /* opacity: 0.6; */
+  }
+  30% {
+    transform: scale(3);
+    /* opacity: 0.6; */
+  }
+  40% {
+    transform: scale(4);
+    /* opacity: 0.6; */
+  }
+  50% {
+    transform: scale(5);
+    /* opacity: 0.6; */
+  }
+  60% {
+    transform: scale(6);
+    /* opacity: 0.6; */
+  }
+  90% {
+    transform: scale(11);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
+
+.splash-circle {
+  animation: splashAnimation 1.09s ease-in;
+}
+
+
+
+
+
+
+
+/* .no-scrollbar::-webkit-scrollbar{ */
+  /* display: none; */
+/* } */
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +101,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  /* left: 0;
+  top: 0; */
+  width: 100%;
+  /* height: 100%; */
+  cursor: pointer;
 }
+
+/* @keyframes puff {
+  0% {
+    top: 100%;
+    height: 0px;
+    padding: 0px;
+  }
+  100% {
+    top: 50%;
+    height: 100%;
+    padding: 0px 100%;
+  }
+} */
