@@ -4,19 +4,11 @@ import React from 'react'
 const Loadingscreen = (props?:any) => {
   const { loading,animationduration,animationdelay } = props;
 
-  function getArray() {
-    return ["Hello", "I" , "am", "Sarah"];
-} 
-let [greeting,pronoun] = getArray();
-
-console.log(greeting);//"Hello"
-console.log(pronoun);//"I"
-
   return <>
      <div className="splash-container inset-0 fixed flex bg-[#4F3B77] justify-center items-center h-screen">
     <div className='rounded-full w-[150px] h-[150px] bg-transparent relative rotate-animation reverseRotateAnimation animate-spin' style={{ background: "conic-gradient(from 180deg at 50% 50%, #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg)", animationDelay: animationdelay, animationDuration:animationduration }}>
     </div>
-    <div className={`${loading?"splash-circle":""} w-[130px] h-[130px] absolute w-32 h-32 rounded-full bg-white border-8 border-[#4F3B77] duration-${animationduration} ease-out m-5`}>
+    <div className={`${loading?"splash-circle":""} w-[137px] h-[137px] absolute w-32 h-32 rounded-full bg-white border-[10px] border-[#4F3B77] duration-${animationduration} ease-out m-5`}>
     </div>
     {/* svg icons  */}
     <svg
