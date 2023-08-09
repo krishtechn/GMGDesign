@@ -29,6 +29,26 @@ body{
   }
 } */
 
+.bottom-navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-item.active {
+  color: #007bff;
+}
+
+
 
 
 /* Custom CSS for the splash animation */

@@ -7,7 +7,7 @@ import TripButtonSection from './TripCardComponents/TripBottomSection';
 const TripCard = (props?:any) => {
   let {fromlocation,tolocation,totalHour} = props;
   return (
-    <div className='bg-[#F2F4F7] w-scren h-auto my-3'>
+    <div className='bg-[#F2F4F7] w-scren h-auto py-4'>
       {/* w-[377px] */}
     <div className='w-[377px] h-auto mx-auto relative top-[30px] bg-white p-4 rounded-[10px]'>
     <LocationDetails fromlocation={fromlocation} tolocation={tolocation} totalHour={totalHour} page="trip" colors={["#344054","#101828","#667085"]}/>

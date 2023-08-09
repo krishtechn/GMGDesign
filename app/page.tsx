@@ -7,6 +7,7 @@ import DateTimePicker from 'react-datetime-picker';
 import 'react-datetime-picker/dist/DateTimePicker.css';
 import 'react-calendar/dist/Calendar.css';
 import 'react-clock/dist/Clock.css';
+import BottomSheetItems from '././components/BottomSheet/BottomSheetItems';
 
 const page = () => {
   // const [value, onChange] = useState<any>(new Date());
@@ -18,8 +19,19 @@ useEffect(()=>{
 
   return (
   <>
+  <div className='w-full h-screen bg-[#F2F4F7]'>
+   <BottomSheetItems />    
+  </div>
+  </>
+  )
+}
+
+export default page
+
+
+
     {/* <ManageVehicles /> */}
-    <Loadingscreen loading={true} animationduration={"1"} animationdelay={"5s"}/>
+    {/* <Loadingscreen loading={true} animationduration={"1"} animationdelay={"5s"}/> */}
     {/* <CheckBox /> */}
     {/* <div>
       <DateTimePicker onChange={onChange} value={value} format='y-MM-dd h:mm:ss a' />
@@ -33,9 +45,3 @@ useEffect(()=>{
 
 <button className='bg-indigo-600 rounded-sm text-white' style={{padding:"12px, 20px, 12px, 20px"}}>Create trip</button>
 </div> */}
-
-  </>
-  )
-}
-
-export default page
