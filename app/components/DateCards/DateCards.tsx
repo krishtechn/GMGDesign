@@ -48,10 +48,11 @@ const DateCards = () => {
             name:"Jul",
             day:"13"
         }
-    ]
+    ];
+
   return (
-    <div className='w-[100%] h-screen py-1 bg-[#493683] overflow-x-hidden'>
-        <div className='overflow-scroll flex flex-row justify-start'>
+    <div className={`w-[100%] py-1 bg-[#493683] overflow-x-hidden`}>
+        <div className='overflow-scroll flex flex-row justify-start '>
         <DateCard data={data}/>
         </div>
     </div>
