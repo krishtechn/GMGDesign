@@ -8,6 +8,7 @@ import 'react-datetime-picker/dist/DateTimePicker.css';
 import 'react-calendar/dist/Calendar.css';
 import 'react-clock/dist/Clock.css';
 import BottomSheetItems from '././components/BottomSheet/BottomSheetItems';
+import DateCards from './components/DateCards/DateCards';
 
 const page = () => {
   // const [value, onChange] = useState<any>(new Date());
@@ -19,9 +20,10 @@ useEffect(()=>{
 
   return (
   <>
-  <div className='w-full h-screen bg-[#F2F4F7]'>
+  <DateCards />
+  {/* <div className='w-full h-screen bg-[#F2F4F7]'>
    <BottomSheetItems />    
-  </div>
+  </div> */}
   </>
   )
 }

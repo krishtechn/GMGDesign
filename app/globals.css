@@ -29,6 +29,15 @@ body{
   }
 } */
 
+.selected {
+  background-color: #6941c6;
+  color:white;
+}
+::-webkit-scrollbar {
+  /* Customize the scrollbar width */
+  display: none;
+}
+
 .bottom-navigation {
   display: flex;
   justify-content: space-around;

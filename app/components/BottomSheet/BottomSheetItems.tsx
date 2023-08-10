@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { HiOutlineHome } from 'react-icons/hi';
@@ -15,6 +15,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const BottomSheetItems = () => {
     let items = ["Home", "Dashboard", "Booking", "Profile"];
+
+    useEffect(()=>{
+    })
 
     const [isBottomSheetOpen, setBottomSheetOpen] = useState(false);
     const [selectedSection, setSelectedSection] = useState('Home');
