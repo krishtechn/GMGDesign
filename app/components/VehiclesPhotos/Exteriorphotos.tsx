@@ -6,6 +6,8 @@ import Useruploadimage from '../Useruploadimage';
 const Exteriorphotos = () => {
 let [images,setimages] = useState<any>([]);
 
+
+// to select image from gallery
 const addimages = (e:any)=>{
   let file = e.target.files[0];
   const reader = new FileReader();

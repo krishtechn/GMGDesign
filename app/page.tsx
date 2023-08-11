@@ -10,6 +10,9 @@ import 'react-clock/dist/Clock.css';
 import BottomSheetItems from '././components/BottomSheet/BottomSheetItems';
 import DateCards from './components/DateCards/DateCards';
 import Selectseats from './components/SelectSeats/Selectseats';
+import CustomTabViews from './components/Tabs/CustomTabs';
+import CustomTabView from './components/Tabs/CustomTabView';
+import { tabs,tabs1 } from './components/ViewTricketsdata';
 
 const page = () => {
   // const [value, onChange] = useState<any>(new Date());
@@ -21,11 +24,19 @@ useEffect(()=>{
 
   return (
   <>
-  {/* <DateCards /> */}
+  <DateCards />
+  
+  <div className='w-full h-screen bg-[#F2F4F7]'>
+  <Selectseats />
+  <CustomTabViews />
+
+  <CustomTabView tabs={tabs} />
+
   {/* <div className='w-full h-screen bg-[#F2F4F7]'>
    <BottomSheetItems />    
   </div> */}
-  <Selectseats />
+  </div>
+
   </>
   )
 }

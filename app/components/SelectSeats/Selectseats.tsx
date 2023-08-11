@@ -4,7 +4,7 @@ import Selectseat from './Selectseat'
 const Selectseats = () => {
     
   return (
-    <div>
+    <div className='flex justify-center items-center w-full flex-col'>
         <Selectseat />
     </div>
   )

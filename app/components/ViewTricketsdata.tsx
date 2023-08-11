@@ -105,6 +105,83 @@ let Bookingpassengerdetails = [
     },
 ];
 
+const tabs = [
+    {
+      label: 'Boarding',
+      content:[
+        {
+            title:"your details Boarding",
+            subtitle:"Please provide your name and email"
+        }
+      ] 
+    },
+    {
+      label: 'Drop',
+      content:[
+        {
+            title:"your details Drop",
+            subtitle:"Please provide your name and email"
+        },
+        {
+            title:"your details Drop",
+            subtitle:"Please provide your name and email"
+        }
+      ]
+    },
+    {
+      label: 'Break',
+      content:[
+        {
+            title:"your details Break",
+            subtitle:"Please provide your name and email"
+        },
+        {
+            title:"your details Break",
+            subtitle:"Please provide your name and email"
+        }
+      ]
+    },
+  ];
+
+
+  const tabs1 = [
+    {
+      label: 'Home',
+      content:[
+        {
+            title:"your details Boarding",
+            subtitle:"Please provide your name and email"
+        }
+      ] 
+    },
+    {
+      label: 'About',
+      content:[
+        {
+            title:"your details Drop",
+            subtitle:"Please provide your name and email"
+        },
+        {
+            title:"your details Drop",
+            subtitle:"Please provide your name and email"
+        }
+      ]
+    },
+    {
+      label: 'Services',
+      content:[
+        {
+            title:"your details Break",
+            subtitle:"Please provide your name and email"
+        },
+        {
+            title:"your details Break",
+            subtitle:"Please provide your name and email"
+        }
+      ]
+    },
+  ];
+
 export {
-  Fromlocation,Tolocation,passengerdetails,totalHour, payment,Buscompany,Brand,BookingDetailsPayment,Bookingpassengerdetails 
+  Fromlocation,Tolocation,passengerdetails,totalHour, payment,Buscompany,Brand,BookingDetailsPayment,Bookingpassengerdetails,tabs,tabs1 
 }

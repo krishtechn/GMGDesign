@@ -9,7 +9,7 @@ const DateCards = () => {
             day:"07"
         },
         {
-            status:"active",
+            status:"",
             name:"Today",
             day:"08"
         },
@@ -36,17 +36,7 @@ const DateCards = () => {
         {
             status:"",
             name:"Jul",
-            day:"13"
-        },
-        {
-            status:"",
-            name:"Jul",
-            day:"13"
-        },
-        {
-            status:"",
-            name:"Jul",
-            day:"13"
+            day:"14"
         }
     ];
 
