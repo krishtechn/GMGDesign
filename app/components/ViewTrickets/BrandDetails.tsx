@@ -13,7 +13,6 @@ const BrandDetails = (props?: any) => {
         <h1 className='font-semibold text-[#1d2939] text-[12px]'>{props.brands.type}</h1>
       </div>
 
-
       <div>
         <p className='font-400 text-[10px] text-[#8c8d89] text-left'>Number Plate</p>
         <h1 className='font-semibold text-[#1d2939] text-[12px]'>{props.brands.noPlate}</h1>

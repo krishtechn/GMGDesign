@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import TabViewContent from './TabViewContent';
-import { tabs } from '../ViewTricketsdata';
 
 const CustomTabView = ({ tabs }: any) => {
     const [activeTab, setActiveTab] = useState(0);

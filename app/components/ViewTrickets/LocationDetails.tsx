@@ -30,8 +30,7 @@ const LocationDetails = (props?:any) => {
            </div>
             :""
         }
-       
-
+    
         <h1 className={`font-semibold mt-2 text-[12px] ${page=="booking"?"text-[#32d583]":"text-[#fff]"}  tracking-wide`}>{page=="booking"?"Completed":totalHour}</h1>
     </div>
 

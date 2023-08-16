@@ -20,12 +20,10 @@ const ManagePolicies = () => {
         resolver: yupResolver(schema),
     });
 
-
     let [data, setdata] = useState({
         title: "",
         desc: ""
     });
-
 
     const onSubmit = (data?: any) => {
         setdata({ title: data.title, desc: data.desc });
@@ -46,6 +44,7 @@ const ManagePolicies = () => {
                                 placeholder="e.g. age restrictions"
                                 className='w-full rounded-[8px] py-[13px] px-[14px] border border-[1px] shadow border-[#d0d5dd] text-[16px]' />}
                         />
+
                         {errors.title && <span className='font-bold text-red-600'>{errors.title.message}</span>}
                         {/* <input placeholder="e.g. age restrictions" {...register("title")} className='w-full rounded-[8px] py-[13px] px-[14px] border border-[1px] shadow border-[#d0d5dd] text-[16px]'/> */}
                     </div>
