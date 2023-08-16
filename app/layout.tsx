@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+import { store } from '../app/store/store';
+import { Provider } from 'react-redux'
 
 const popins = Poppins({
   weight: '400',
@@ -20,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     {/* <Provider store={store}> */}
       <body className={popins.className}>{children}</body>
+    {/* </Provider> */}
     </html>
   )
 }

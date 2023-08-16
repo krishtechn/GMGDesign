@@ -13,6 +13,7 @@ import Selectseats from './components/SelectSeats/Selectseats';
 import CustomTabViews from './components/Tabs/CustomTabs';
 import CustomTabView from './components/Tabs/CustomTabView';
 import { tabs,tabs1 } from './components/ViewTricketsdata';
+import { usePathname } from 'next/navigation'
 
 const page = () => {
   // const [value, onChange] = useState<any>(new Date());
@@ -22,27 +23,28 @@ useEffect(()=>{
   // },300)
 })  
 
+
+
   return (
   <>
-  <DateCards />
+  {/* <DateCards />
   
   <div className='w-full h-screen bg-[#F2F4F7]'>
   <Selectseats />
   <CustomTabViews />
 
-  <CustomTabView tabs={tabs} />
+  <CustomTabView tabs={tabs} /> */}
 
   {/* <div className='w-full h-screen bg-[#F2F4F7]'>
    <BottomSheetItems />    
   </div> */}
-  </div>
+  {/* </div> */}
 
   </>
   )
 }
 
 export default page
-
 
 
     {/* <ManageVehicles /> */}
