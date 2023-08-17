@@ -1,15 +1,12 @@
 "use client"
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useForm, Controller } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { AiOutlineUser } from 'react-icons/ai';
 import { LuPhoneCall } from 'react-icons/lu';
 import { HiOutlineMail } from 'react-icons/hi';
-import { usePathname,useSearchParams } from 'next/navigation';
-import { useReportWebVitals } from 'next/web-vitals';
-import { BottomSheet } from 'react-spring-bottom-sheet'
-import 'react-spring-bottom-sheet/dist/style.css'
+import Sheet from 'react-modal-sheet';
 
 const SignupSchema = yup.object().shape({
     fullName: yup.string().required(),
@@ -18,20 +15,7 @@ const SignupSchema = yup.object().shape({
 });
 
 const signup = () => {
-    let path = usePathname();
-    const searchParams = useSearchParams()
-
-    const [open, setOpen] = useState(false)
-
-    useReportWebVitals((metric) => {
-        console.log(metric)
-      })
-
-    useEffect(() => {
-        // Do something here...
-        console.log(path);
-        console.log(searchParams);
-      }, [path, searchParams])
+    const [isOpen, setOpen] = useState(false);
 
     let [data, setdata] = useState<any>();
     const {
@@ -47,13 +31,33 @@ const signup = () => {
 
     return (
         <div className='flex justify-center items-center flex-col'>
+            {/* <style>
+                {`
+          body{
+            background:black;
+            color:white;
+          }
+      `}
+            </style> */}
             <div className='w-[359px] border-[1px] border-[#eaecf0] rounded-[10px] p-[20px] my-[40px]'>
-            <button onClick={() => setOpen(true)}>Open</button>
-              <BottomSheet open={open}>
-                <h1>hello world </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ullam ad soluta possimus? Consequuntur id, eos aspernatur tenetur, quos impedit nostrum dolore neque fuga omnis dicta quo dolorum tempore facere. Fugit, doloribus. Soluta minima iure accusamus blanditiis beatae quibusdam omnis numquam! Impedit ipsa consectetur porro, fugiat dolor eos veritatis itaque atque expedita harum? Ipsum, suscipit? Ea nihil, ut nemo ratione sed quae veritatis at quod architecto error beatae non. Temporibus, placeat sunt corrupti laborum autem consectetur quas nemo nihil enim ab nobis aliquam facere debitis tenetur nisi vero veritatis reprehenderit aut suscipit magnam delectus soluta repellat ut. Dignissimos, obcaecati explicabo!</p>
-              </BottomSheet>
                 <h1 className='font-semibold text-[#6941c6] text-[14px] mb-[20px]'>Personal</h1>
+
+                <button onClick={() => setOpen(true)}>Open sheet</button>
+
+                <Sheet isOpen={isOpen} onClose={() => setOpen(false)}>
+                    <Sheet.Container>
+                        <Sheet.Header>
+                            <h1 className='font-semibold text-[#6941c6] text-[14px] mb-[20px]'>Personal</h1>
+                        </Sheet.Header>
+                        <Sheet.Content>
+                            <Sheet.Scroller>
+                                <p className='font-semibold text-[#6941c6] text-[14px] mb-[20px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus eum doloremque dignissimos sed. Deleniti ut, omnis ipsum tenetur sequi sed nulla enim dolores officiis, quasi rem quas. Adipisci obcaecati nulla voluptate ipsa! Dolorum consectetur perspiciatis vero libero rem ratione inventore provident exercitationem. Explicabo deleniti veniam, repellendus esse quas similique quae sed rem eius nihil tempore deserunt laboriosam repellat laborum dolor iure ea nam necessitatibus aperiam! Nihil, voluptate quas! Eos explicabo veniam, quos, assumenda reprehenderit cum exercitationem qui accusamus placeat dolore, repellat cumque? Fugit a soluta natus distinctio earum culpa sapiente, aspernatur architecto tenetur quod iste similique aliquam non corporis? Cum?</p>
+                            </Sheet.Scroller>
+                        </Sheet.Content>
+                    </Sheet.Container>
+                    <Sheet.Backdrop />
+                </Sheet>
+
                 <form onSubmit={handleSubmit(onSubmit)} method=''>
 
                     <div className='flex flex-col mb-[10px]'>

@@ -12,22 +12,24 @@ import DateCards from './components/DateCards/DateCards';
 import Selectseats from './components/SelectSeats/Selectseats';
 import CustomTabViews from './components/Tabs/CustomTabs';
 import CustomTabView from './components/Tabs/CustomTabView';
-import { tabs,tabs1 } from './components/ViewTricketsdata';
+import { tabs, tabs1 } from './components/ViewTricketsdata';
 import { usePathname } from 'next/navigation'
+import Homepage from './components/Homepage';
 
 const page = () => {
   // const [value, onChange] = useState<any>(new Date());
-useEffect(()=>{
-  // setTimeout(()=>{
-  //   document.location.href = "http://localhost:3000/ViewTrickets";
-  // },300)
-})  
+  useEffect(() => {
+    // setTimeout(()=>{
+    //   document.location.href = "http://localhost:3000/ViewTrickets";
+    // },300)
+  })
 
-
+  let path = usePathname();
+  console.log(path);
 
   return (
-  <>
-  {/* <DateCards />
+    <>
+      {/* <DateCards />
   
   <div className='w-full h-screen bg-[#F2F4F7]'>
   <Selectseats />
@@ -35,25 +37,27 @@ useEffect(()=>{
 
   <CustomTabView tabs={tabs} /> */}
 
-  {/* <div className='w-full h-screen bg-[#F2F4F7]'>
+      {/* <div className='w-full h-screen bg-[#F2F4F7]'>
    <BottomSheetItems />    
   </div> */}
-  {/* </div> */}
+      {/* </div> */}
 
-  </>
+      {/* <Homepage /> */}
+
+    </>
   )
 }
 
 export default page
 
 
-    {/* <ManageVehicles /> */}
-    {/* <Loadingscreen loading={true} animationduration={"1"} animationdelay={"5s"}/> */}
-    {/* <CheckBox /> */}
-    {/* <div>
+{/* <ManageVehicles /> */ }
+{/* <Loadingscreen loading={true} animationduration={"1"} animationdelay={"5s"}/> */ }
+{/* <CheckBox /> */ }
+{/* <div>
       <DateTimePicker onChange={onChange} value={value} format='y-MM-dd h:mm:ss a' />
     </div> */}
-   {/* <div className='flex flex-col'>
+{/* <div className='flex flex-col'>
    <label className='font-semibold text-[14px] leading-[20px] tracking-wide	'>Child passenger</label>   
 <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
   <option selected>Choose a country</option>
