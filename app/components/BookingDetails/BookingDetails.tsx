@@ -9,8 +9,8 @@ import PassengerCards from './PassengerCards';
 
 const BookingDetails = () => {
     return (
-        <div className='mx-auto bg-[#F2F4F7]'>
-            <div className=' bg-[#42307d] py-[10px] px-[8px] shadow'>
+        <div className='mx-auto bg-secondary-100'>
+            <div className=' bg-primary-900 py-[10px] px-[8px] shadow'>
                 <div className='flex justify-between items-center mb-[20px]'>
 
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color='white' className='text-white'>
@@ -19,7 +19,7 @@ const BookingDetails = () => {
                         </g>
                     </svg>
 
-                    <h1 className='text-white text-[16px] text-center'>Booking Details</h1>
+                    <h1 className='text-base-white text-[16px] text-center'>Booking Details</h1>
 
                     <AiOutlineArrowLeft width={"13.33px"} height={"10px"} color='#d92d20' />
 
@@ -30,14 +30,14 @@ const BookingDetails = () => {
             </div>
 
            <div className='px-4'>
-            <div className='w-full rounded-xl bg-white my-4 py-3 px-2'>
-                <h1 className='text-[12px] font-bold text-[#53389e]'>Vehicle information</h1>
+            <div className='w-full rounded-xl bg-base-white my-4 py-3 px-2'>
+                <h1 className='text-[12px] font-bold text-primary-800'>Vehicle information</h1>
                 <BusCompany details={Buscompany} />
                 <BrandDetails brands={Brand} />
             </div>
 
-            <div className='w-full rounded-xl bg-white my-4 py-3 px-2'>
-                <h1 className='text-[12px] font-bold text-[#53389e]'>Payment information</h1>
+            <div className='w-full rounded-xl bg-base-white my-4 py-3 px-2'>
+                <h1 className='text-[12px] font-bold text-primary-800'>Payment information</h1>
                 <div className='w-full flex justify-between flex-row mt-2 font-medium'>
                   <div className='flex flex-col leading-[24px]'>
                     <h1 className='text-[12px]'>Transaction : 23948232</h1>
@@ -59,10 +59,10 @@ const BookingDetails = () => {
           </div>
           </div>
 
-          <div className='w-full bg-white h-[100px] flex justify-center items-center '>
-          <div className='border border-[1px] p-4 rounded-xm border-[#d0d5dd] hover:bg-indigo-700 
+          <div className='w-full bg-base-white h-[100px] flex justify-center items-center '>
+          <div className='border border-[1px] p-4 rounded-xm border-secondary-300 hover:bg-indigo-700 
           py-3 px-5 text-center cursor-pointer w-full mx-3'>
-            <p className='font-[14px] font-medium text-[#6941c6] text-center hover:text-white'>View Tickets</p>
+            <p className='font-[14px] font-medium text-primary text-center hover:text-base-white'>View Tickets</p>
           </div>
           </div>
         </div>

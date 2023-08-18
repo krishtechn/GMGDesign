@@ -7,9 +7,9 @@ const LocationDetails = (props?:any) => {
     return (
      <div className='w-[376px h-[60px] flex justify-center items-center flex-row'>
     <div className='flex flex-col'>
-        <p className={`font-400 text-[10px] ${page=="booking"?"text-[#b692f6]":""} text-left`}>{fromlocation.time}</p>
-        <h1 className={`font-semibold ${page=="booking"?"text-[#fff]":""} text-[16px]`}>{fromlocation.fromlocation}</h1>
-        <p className={`font-400 text-[11px] ${page=="booking"?"text-[#b692f6]":""}`}>{fromlocation.currentdate}</p>
+        <p className={`font-400 text-[10px] ${page=="booking"?"text-primary-400":""} text-left`}>{fromlocation.time}</p>
+        <h1 className={`font-semibold ${page=="booking"?"text-base-white":""} text-[16px]`}>{fromlocation.fromlocation}</h1>
+        <p className={`font-400 text-[11px] ${page=="booking"?"text-primary-400":""}`}>{fromlocation.currentdate}</p>
     </div>
 
     <div className='w-full justify-center items-center flex flex-col'>
@@ -31,13 +31,13 @@ const LocationDetails = (props?:any) => {
             :""
         }
     
-        <h1 className={`font-semibold mt-2 text-[12px] ${page=="booking"?"text-[#32d583]":"text-[#fff]"}  tracking-wide`}>{page=="booking"?"Completed":totalHour}</h1>
+        <h1 className={`font-semibold mt-2 text-xs ${page=="booking"?"text-success-400":"text-black"}  tracking-wide`}>{page=="booking"?"Completed":totalHour}</h1>
     </div>
 
     <div className='flex flex-col justify-center'>
-    <p className={`font-400 text-[10px] ${page=="booking"?"text-[#b692f6]":""} text-left`}>{tolocation.time}</p>
-        <h1 className={`font-semibold ${page=="booking"?"text-[#fff]":""} text-[16px]`}>{tolocation.fromlocation}</h1>
-        <p className={`font-400 text-[11px] ${page=="booking"?"text-[#b692f6]":""}`}>{tolocation.currentdate}</p>
+    <p className={`font-400 text-[10px] ${page=="booking"?"text-primary-400":""} text-left`}>{tolocation.time}</p>
+        <h1 className={`font-semibold ${page=="booking"?"text-base-white":""} text-[16px]`}>{tolocation.fromlocation}</h1>
+        <p className={`font-400 text-[11px] ${page=="booking"?"text-primary-400":""}`}>{tolocation.currentdate}</p>
     </div>
    </div>
   )

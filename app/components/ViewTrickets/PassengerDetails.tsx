@@ -3,10 +3,10 @@ import React from 'react'
 
 const PassengerDetails = (props?:any) => {
   return (
-    <div className='w-full flex justify-between flex-row h-[50px] items-center'>
-    <div className='w-[44px] h-[47px] flex justify-center flex-col items-center rounded-[6px] border-1 bg-[#6941c6] text-center'>
-        <p className='font-500 text-[10px] text-white pt-[10px]'>Seat</p>
-        <h1 className='font-600 text-white text-[16px]'>A1</h1>
+    <div className='w-full flex justify-between flex-row h-[50px] mb-[20px] items-center'>
+    <div className='w-[44px] h-[47px] flex justify-center flex-col items-center rounded-[6px] border-1 bg-primary-700 text-center'>
+        <p className='font-500 text-[10px] text-base-white pt-[10px]'>Seat</p>
+        <h1 className='font-600 text-base-white text-[16px]'>A1</h1>
     </div>
 
     <div className='flex-1 w-full ml-5'>

@@ -9,14 +9,14 @@ import { Fromlocation, Tolocation, passengerdetails, totalHour, payment, Buscomp
 
 const Trickets = () => {
     return (
-        <div className='bg-[#F2F4F7] w-full h-screen'>
-            <div className='w-[353px] h-[505px] relative top-[30px] bg-white p-4 rounded-[10px] mx-auto my-0'>
+        <div className='bg-secondary-100 w-full h-screen'>
+            <div className='w-[353px] h-[505px] relative top-[30px] bg-base-white p-4 rounded-[10px] mx-auto my-0'>
 
                 <PassengerDetails passengerdetails={passengerdetails} />
 
                 <LocationDetails fromlocation={Fromlocation} tolocation={Tolocation} totalHour={totalHour} />
 
-                <hr className='mt-5' color='#eaecf0' />
+                <hr className='mt-5 text-md-r text-secondary-200'  />
 
                 <BusCompany details={Buscompany} />
 

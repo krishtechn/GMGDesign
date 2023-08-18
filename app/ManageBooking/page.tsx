@@ -5,10 +5,7 @@ import { Fromlocation,Tolocation,totalHour} from '../components/ViewTricketsdata
 
 const ManageBooking = () => {
   return (
-    <div className='bg-[#F2F4F7] w-full flex flex-col justify-center items-center'>
-     <TripCard fromlocation={Fromlocation} tolocation={Tolocation} totalHour={totalHour}/>
-     <TripCard fromlocation={Fromlocation} tolocation={Tolocation} totalHour={totalHour}/>
-     <TripCard fromlocation={Fromlocation} tolocation={Tolocation} totalHour={totalHour}/>
+    <div className='bg-secondary-100 w-full flex flex-col justify-center h-screen items-center'>
      <TripCard fromlocation={Fromlocation} tolocation={Tolocation} totalHour={totalHour}/>
     </div>
   )

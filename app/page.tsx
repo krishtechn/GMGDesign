@@ -28,14 +28,16 @@ const page = () => {
   console.log(path);
 
   return (
-    <>
-      {/* <DateCards />
-  
+    <div className='bg-blue123'>
+      <DateCards />
+{/*   
   <div className='w-full h-screen bg-[#F2F4F7]'>
   <Selectseats />
   <CustomTabViews />
 
-  <CustomTabView tabs={tabs} /> */}
+  <CustomTabView tabs={tabs} /> 
+  </div> */}
+  <h1 className=''>hello world</h1>
 
       {/* <div className='w-full h-screen bg-[#F2F4F7]'>
    <BottomSheetItems />    
@@ -44,7 +46,7 @@ const page = () => {
 
       {/* <Homepage /> */}
 
-    </>
+    </div>
   )
 }
 
